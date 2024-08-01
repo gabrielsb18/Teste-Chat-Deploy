@@ -1,0 +1,76 @@
+:root {
+  --clr-a: #f0d4d4;
+  --clr-b: #d92936;
+  --clr-c: #b41e3c;
+  --clr-d: #961e1e;
+
+  --clr-green: #87bb87;
+  --clr-blue: #8787bb;
+
+  --clr-lighter: #fff8f8;
+  --clr-light: #fff0f0;
+  --clr-dark: #3c1e1e;
+
+  --clr-lighter-gray: #f4f4f4;
+  --clr-light-gray: #d7d7d7;
+  --clr-gray: #a1a1a1;
+  --clr-dark-gray: #717171;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--clr-dark);
+}
+
+body {
+  color: var(--clr-dark);
+  font-family: var(--font-a);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-b);
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+  }
+
+  20% {
+    box-shadow: 0 0 0 0 rgb(0 0 0 / 75%);
+    transform: scale(1);
+  }
+
+  100% {
+    box-shadow: 0 0 0 10px rgb(0 0 0 / 0%);
+    transform: scale(0.95);
+  }
+}
+
+@keyframes timeout {
+  0% {
+    width: 100%;
+  }
+
+  100% {
+    width: 0;
+  }
+}
