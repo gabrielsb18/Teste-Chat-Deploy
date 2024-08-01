@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { type ReactNode } from 'react';
 import styled from 'styled-components';
 
-export const Header = styled.header`
+const Header = styled.header`
   align-items: center;
   background-color: var(--clr-c);
   box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%);
@@ -20,7 +20,7 @@ export const Header = styled.header`
   }
 `;
 
-export const Main = styled.main`
+const Main = styled.main`
   background-color: var(--clr-lighter-gray);
   background-image: linear-gradient(to top, var(--clr-light-gray), transparent 10%);
   display: flex;
@@ -33,7 +33,7 @@ export const Main = styled.main`
   }
 `;
 
-export const Section = styled.section`
+const Section = styled.section`
   background-color: white;
   border-radius: 16px;
   gap: 30px;
